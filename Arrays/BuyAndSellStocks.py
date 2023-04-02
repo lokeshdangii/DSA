@@ -7,9 +7,11 @@ def buyAndSell(prices):
         if buyPrice<prices[i]:
             profit = prices[i]-buyPrice
             maxProfit = max(profit,maxProfit)
+            print("The BuyPrice is {} and maximum Profit is {}".format(buyPrice,maxProfit))
+            
         else:
             buyPrice = prices[i]
-        
+            print("The BuyPrice ==",buyPrice)
 
     return maxProfit
 
