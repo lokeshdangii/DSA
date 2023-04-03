@@ -16,7 +16,7 @@ def trappingRainwater(height):
         else:
             left_maxBoundary[i] = max
 
-    # print(left_maxBoundary)
+    print(left_maxBoundary)
 
     max = height[n-1] # initializing last element of heigth to the max
 
@@ -27,7 +27,7 @@ def trappingRainwater(height):
         else:
             right_maxBoundary[i] = max
 
-    # print(right_maxBoundary)
+    print(right_maxBoundary)
 
     water_level = 0   
     traped_water = 0
@@ -39,7 +39,7 @@ def trappingRainwater(height):
     return traped_water
     
 
-
 height = [4,2,0,6,3,2,5]
+# height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
 tw = trappingRainwater(height)
 print("Total water trapped : ",tw)

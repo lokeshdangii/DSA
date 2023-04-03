@@ -7,13 +7,18 @@ def triplets(nums):
     list1 = []
   
     for i in range(0,n):
-        for j in range(i+1,n):
+        for j in range(i+1,n): 
             for k in range(j+1,n):
                 if i!=j and i!=k and j!=k and nums[i] + nums[j] + nums[k] == 0:
                     list1.append([nums[i], nums[j], nums[k]])
                     # return nums[i], nums[j], nums[k]
                     return list1
     return -1
+
+
+# ------------------------------------------------------------------
+
+
 
 def three_sum(nums):
     result = []
@@ -37,6 +42,8 @@ def three_sum(nums):
             else:
                 k -= 1
     return result
+
+# -------------------------------------------------------------------------------
 
 def threeSum(nums):
     nums.sort()
@@ -63,7 +70,7 @@ def threeSum(nums):
 
 
 
-
+# ---------------------------------------------------------------------------
 nums = [-1, 0, 1, 2, -1, -4]
 print(triplets(nums))
 print(threeSum(nums))

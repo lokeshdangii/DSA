@@ -16,6 +16,8 @@ def bruteforce(arr):
 
     print("Maximum Sum = ",maxsum)
 
+# Kadens's Algorithm
+
 def kadensAlgo(arr):
     curr_sum = 0
     max_sum = -1000000
