@@ -2,13 +2,13 @@ def selectionSort(arr):
     minPos = 0
 
     for i in range(0,len(arr)-1):
-        minPos = i
+        min = i
         for j in range(i+1,len(arr)):
-            if arr[minPos] > arr[j]:
-                minPos = j
+            if arr[j] < arr[min]:
+                min = j
         
 
-        arr[minPos],arr[i] = arr[i],arr[minPos]
+        arr[min],arr[i] = arr[i],arr[min]
     
 
     return arr
